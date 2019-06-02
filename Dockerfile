@@ -4,8 +4,8 @@ RUN apt-get update && \
 apt-get -y install apache2 \
 php5 \
 php5-mysql \
-mysql-client \
-wget
+wget \
+curl \
 RUN wget https://wordpress.org/wordpress-4.9.9.tar.gz && \
 tar xzvf wordpress-4.9.9.tar.gz && \
 cp -R ./wordpress/* /var/www/html && \
